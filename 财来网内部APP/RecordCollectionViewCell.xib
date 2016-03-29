@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecordCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBa-6O-NHE">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-3W-qeU">
+                        <rect key="frame" x="65" y="0.0" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="cMC-63-MMw"/>
+                            <constraint firstAttribute="height" constant="35" id="hiS-mg-DeI"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="KBa-6O-NHE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AwB-PM-XxR"/>
+                <constraint firstAttribute="bottom" secondItem="KBa-6O-NHE" secondAttribute="bottom" id="C51-Ec-KsB"/>
+                <constraint firstAttribute="trailing" secondItem="KBa-6O-NHE" secondAttribute="trailing" id="OQ9-XZ-h4W"/>
+                <constraint firstItem="KBa-6O-NHE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eT4-Xl-XDE"/>
+                <constraint firstItem="MPD-3W-qeU" firstAttribute="top" secondItem="KBa-6O-NHE" secondAttribute="top" id="eei-5v-MYE"/>
+                <constraint firstAttribute="trailing" secondItem="MPD-3W-qeU" secondAttribute="trailing" id="qxO-uC-kBC"/>
+            </constraints>
+            <size key="customSize" width="128" height="131"/>
+            <point key="canvasLocation" x="160" y="188.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

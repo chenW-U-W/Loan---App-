@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  财来网内部APP
+//
+//  Created by 陈思远 on 15/10/28.
+//  Copyright © 2015年 陈思远. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#define ItembtnHeight 80
+//itembtn的高度+statusBar的高度+navview的高度
+
+#define barBtnHeight 40
+
+#define morenImage @""
+
+#define morenRecorderImage @"lyjbjt"
+
+#define morenMovieImage @""
+
+#define CailaiAPIBaseURLString @"http://apitest.cailai.com/v1.0/"
+#define CailaiAPIMovieURLString @"http://daikuanadmin.cailai.com"
+#define CailaiAPIImageURLString @"http://daikuanadmin.cailai.com"
+#define SecretKey @"bc7cfba8367fdc117d2ac8e85a5effe3"
+#define NORMALCOLOR [UIColor colorWithRed:1 green:0.45 blue:0 alpha:1]
+
+#define ALERTVIEW {UIAlertView *alert =[[UIAlertView alloc] initWithTitle:nil message:@"网络链接失败" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];[alert show];}
+
+#define ALERTVIEW_server {UIAlertView *alert =[[UIAlertView alloc] initWithTitle:nil message:@"数据传输错误" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];[alert show];}
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define mainColor  UIColorFromRGB(0x9a001a)
+#define CSYlightGrayColor [UIColor lightGrayColor]
+#define LeftSelectedColor UIColorFromRGB(0x0bb0523)
+#define customBarHeight 64
+#define bottomDefaultColor UIColorFromRGB(0xececec)
+#endif

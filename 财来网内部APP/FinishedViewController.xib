@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinishedViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-UO-FdU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-ae-1dJ">
+                            <rect key="frame" x="0.0" y="0.0" width="47" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="47" id="JGu-AX-cqa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="251" text="借款人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHp-12-0MC">
+                            <rect key="frame" x="47" y="0.0" width="60" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="YJ3-G7-Jd7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="251" text="手机号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBk-kn-RlL">
+                            <rect key="frame" x="107" y="0.0" width="97" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="97" id="joS-zq-bCh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分配时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSd-eO-L72">
+                            <rect key="frame" x="204" y="0.0" width="108" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="6UI-pK-LGP"/>
+                        <constraint firstAttribute="bottom" secondItem="mBk-kn-RlL" secondAttribute="bottom" id="8o6-ai-uie"/>
+                        <constraint firstAttribute="bottom" secondItem="GHp-12-0MC" secondAttribute="bottom" id="96a-6Q-cAv"/>
+                        <constraint firstItem="dYW-ae-1dJ" firstAttribute="top" secondItem="yzX-UO-FdU" secondAttribute="top" id="9k5-8Z-Ker"/>
+                        <constraint firstAttribute="bottom" secondItem="dYW-ae-1dJ" secondAttribute="bottom" id="DpN-dn-bzV"/>
+                        <constraint firstItem="GHp-12-0MC" firstAttribute="leading" secondItem="dYW-ae-1dJ" secondAttribute="trailing" id="QBP-De-Iuf"/>
+                        <constraint firstItem="CSd-eO-L72" firstAttribute="leading" secondItem="mBk-kn-RlL" secondAttribute="trailing" id="RkN-gu-pzN"/>
+                        <constraint firstItem="GHp-12-0MC" firstAttribute="top" secondItem="yzX-UO-FdU" secondAttribute="top" id="Slu-t1-cWY"/>
+                        <constraint firstItem="mBk-kn-RlL" firstAttribute="leading" secondItem="GHp-12-0MC" secondAttribute="trailing" id="TRA-Kg-kOg"/>
+                        <constraint firstItem="mBk-kn-RlL" firstAttribute="top" secondItem="yzX-UO-FdU" secondAttribute="top" id="Unb-Zp-Dmz"/>
+                        <constraint firstItem="dYW-ae-1dJ" firstAttribute="leading" secondItem="yzX-UO-FdU" secondAttribute="leading" id="WTn-Vv-b3Z"/>
+                        <constraint firstAttribute="trailing" secondItem="CSd-eO-L72" secondAttribute="trailing" constant="8" id="hke-zw-C7c"/>
+                        <constraint firstItem="CSd-eO-L72" firstAttribute="top" secondItem="yzX-UO-FdU" secondAttribute="top" id="oUW-85-mqB"/>
+                        <constraint firstAttribute="bottom" secondItem="CSd-eO-L72" secondAttribute="bottom" id="tnG-lp-2aY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yzX-UO-FdU" secondAttribute="trailing" id="CAI-cx-VIQ"/>
+                <constraint firstItem="yzX-UO-FdU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dKF-HK-nih"/>
+                <constraint firstItem="yzX-UO-FdU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iCi-NQ-TOb"/>
+            </constraints>
+            <point key="canvasLocation" x="177" y="324"/>
+        </view>
+    </objects>
+</document>

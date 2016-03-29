@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LeftMainViewController.h"
+#import "RootMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSString *homeDir = NSHomeDirectory();
+    NSLog(@"%@",homeDir);
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];    
+    RootMainViewController *rootMainVC = [[RootMainViewController alloc] init];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:rootMainVC];
+    LeftMainViewController *leftViewVC = [[LeftMainViewController alloc] init];
+    //LeftMainViewController *leftViewVC = (LeftMainViewController *)[[NSBundle mainBundle] loadNibNamed:@"LeftMainViewController" owner:self options:nil];
+    //NSLog(@"%@",NSStringFromCGRect(leftViewVC.view.frame));
+    _leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftViewVC andMainView:navC];
+    self.window.rootViewController = _leftSlideVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
